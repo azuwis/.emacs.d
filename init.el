@@ -41,6 +41,11 @@
 ;; zenburn
 (load-theme 'zenburn t)
 
+;; powerline
+(require 'powerline)
+(powerline-center-evil-theme)
+(setq powerline-default-separator 'zigzag)
+
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
