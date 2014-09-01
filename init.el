@@ -13,7 +13,7 @@
 (setq scroll-margin 3)
 (setq scroll-conservatively 100)
 ;; default major mode
-(setq major-mode 'text-mode)
+(setq-default major-mode 'text-mode)
 ;; set title to 'buffer @ file'
 (setq frame-title-format "%b @ %f")
 ;; show maching parenthesis
