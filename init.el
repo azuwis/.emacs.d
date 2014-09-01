@@ -19,7 +19,9 @@
 ;; show maching parenthesis
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
-; setting for window system
+;; more highlight
+(require 'generic-x)
+;; setting for window system
 (if window-system
     (progn
       ;; yank at cursor, not at click
