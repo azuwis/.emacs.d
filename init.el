@@ -1,21 +1,22 @@
-;;; Init --- Emacs init config
+;;; init.el --- Emacs init config
 
 ;;; Commentary:
+;;; Emacs config for Vim user
 
 ;;; Code:
 ;; common settings
-; no cursor blink
+;; no cursor blink
 (blink-cursor-mode 0)
-; no splash
+;; no splash
 (setq inhibit-startup-message t)
-; scroll behavior
+;; scroll behavior
 (setq scroll-margin 3)
 (setq scroll-conservatively 100)
-; default major mode
+;; default major mode
 (setq major-mode 'text-mode)
-; set title to 'buffer @ file'
+;; set title to 'buffer @ file'
 (setq frame-title-format "%b @ %f")
-; show maching parenthesis
+;; show maching parenthesis
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
 ; setting for window system
@@ -24,9 +25,7 @@
       ;; yank at cursor, not at click
       (setq mouse-yank-at-point t)
       ;; disable tool bar
-      (tool-bar-mode -1)
-      )
-  )
+      (tool-bar-mode -1)))
 
 ;; elpa
 (require 'package)
