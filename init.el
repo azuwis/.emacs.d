@@ -4,6 +4,7 @@
 ;;; Emacs config for Vim user
 
 ;;; Code:
+
 ;; common settings
 ;; no cursor blink
 (blink-cursor-mode 0)
@@ -38,6 +39,7 @@
 ;; evil
 (require 'evil)
 (evil-mode t)
+(setq evil-esc-delay 0)
 
 ;; zenburn
 (load-theme 'zenburn t)
