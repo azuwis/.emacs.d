@@ -40,6 +40,15 @@
 (require 'evil)
 (evil-mode t)
 (setq evil-esc-delay 0)
+;; evil-matchit
+(require 'evil-matchit)
+(global-evil-matchit-mode 1)
+;; evil-surround
+(require 'evil-surround)
+(global-evil-surround-mode 1)
+;; evil-nerd-commenter
+(require 'evil-nerd-commenter)
+(evilnc-default-hotkeys)
 
 ;; zenburn
 (load-theme 'zenburn t)
