@@ -27,6 +27,8 @@
 (setq mouse-yank-at-point t)
 ;; disable tool bar
 (tool-bar-mode -1)
+;; disable scroll bar
+(scroll-bar-mode 0)
 
 ;; elpa
 (require 'package)
