@@ -62,12 +62,10 @@
 (powerline-center-evil-theme)
 (setq powerline-default-separator 'zigzag)
 
-;; git-gutter-fringe
-(if window-system
-    (progn
-      (require 'git-gutter-fringe))
-  (require 'git-gutter))
-(global-git-gutter-mode +1)
+;; git-gutter-fringe+
+(require 'git-gutter-fringe+)
+(global-git-gutter+-mode t)
+(git-gutter-fr+-minimal)
 
 ;; flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
