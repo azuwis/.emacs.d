@@ -29,6 +29,9 @@
 (tool-bar-mode -1)
 ;; disable scroll bar
 (scroll-bar-mode 0)
+;; window size
+(add-to-list 'default-frame-alist '(width . 100))
+(add-to-list 'default-frame-alist '(height . 48))
 
 ;; elpa
 (require 'package)
