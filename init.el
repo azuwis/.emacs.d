@@ -23,13 +23,10 @@
 (setq show-paren-style 'mixed)
 ;; more highlight
 (require 'generic-x)
-;; setting for window system
-(if window-system
-    (progn
-      ;; yank at cursor, not at click
-      (setq mouse-yank-at-point t)
-      ;; disable tool bar
-      (tool-bar-mode -1)))
+;; yank at cursor, not at click
+(setq mouse-yank-at-point t)
+;; disable tool bar
+(tool-bar-mode -1)
 
 ;; elpa
 (require 'package)
