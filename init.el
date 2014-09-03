@@ -10,6 +10,7 @@
 (blink-cursor-mode 0)
 ;; no splash
 (setq inhibit-startup-message t)
+(setq initial-scratch-message "")
 ;; scroll behavior
 (setq scroll-margin 3)
 (setq scroll-conservatively 100)
