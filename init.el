@@ -34,6 +34,7 @@
 (add-to-list 'default-frame-alist '(height . 48))
 
 ;; elpa
+;; TODO only add melpa when run package-install/package-list-packages
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.milkbox.net/packages/") t)
